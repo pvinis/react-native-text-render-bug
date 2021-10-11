@@ -1,3 +1,3 @@
 # react-native-text-render-bug
 
-![](/Screenshot 2021-10-11 at 18.26.36.png)
+![](https://raw.githubusercontent.com/pvinis/react-native-text-render-bug/main/Screenshot%202021-10-11%20at%2018.26.36.png)
