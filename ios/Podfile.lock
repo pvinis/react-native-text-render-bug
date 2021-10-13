@@ -397,7 +397,7 @@ DEPENDENCIES:
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
-  https://cdn.cocoapods.org/:
+  trunk:
     - CocoaAsyncSocket
     - Flipper
     - Flipper-Boost-iOSX
@@ -523,4 +523,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 37196fea41cf3bef85d09f999aae91df0ec6a341
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
