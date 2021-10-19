@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Platform, Text, View} from 'react-native';
 
 const App = () => {
   const style = {
@@ -20,10 +20,50 @@ const App = () => {
           marginTop: 200,
           height: 100,
         }}>
-        <Text style={style}>regular TEXT.</Text>
-        <Text style={style}>ALL CAPS text.</Text>
-        <Text style={[style, {fontFamily: 'Iosevka'}]}>regular TEXT.</Text>
-        <Text style={[style, {fontFamily: 'Iosevka'}]}>ALL CAPS text.</Text>
+        <Text
+          style={style}
+          onLayout={event =>
+            console.log({
+              which: 1,
+              layout: event.nativeEvent.layout,
+              platfrom: Platform.OS,
+            })
+          }>
+          regular TEXT.
+        </Text>
+        <Text
+          style={style}
+          onLayout={event =>
+            console.log({
+              which: 2,
+              layout: event.nativeEvent.layout,
+              platfrom: Platform.OS,
+            })
+          }>
+          ALL CAPS text.
+        </Text>
+        <Text
+          style={[style, {fontFamily: 'Iosevka'}]}
+          onLayout={event =>
+            console.log({
+              which: 3,
+              layout: event.nativeEvent.layout,
+              platfrom: Platform.OS,
+            })
+          }>
+          regular TEXT.
+        </Text>
+        <Text
+          style={[style, {fontFamily: 'Iosevka'}]}
+          onLayout={event =>
+            console.log({
+              which: 4,
+              layout: event.nativeEvent.layout,
+              platfrom: Platform.OS,
+            })
+          }>
+          ALL CAPS text.
+        </Text>
       </View>
     </View>
   );
